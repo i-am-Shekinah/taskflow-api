@@ -34,8 +34,6 @@ tsconfig.tsbuildinfo
 *.pfx
 
 # --- Prisma ORM ---
-/prisma/migrations/
-# Uncomment the line below if you want to ignore the auto-generated Prisma Client
 # node_modules/.prisma
 
 # --- Operating System Files ---
@@ -99,3 +97,4 @@ lerna-debug.log*
 *.seed
 *.pid.lock
 .pm2/
+/src/generated/prisma
