@@ -1,0 +1,101 @@
+# ==============================================================================
+# Comprehensive .gitignore for Node.js / TypeScript / Prisma / Environment
+# ==============================================================================
+
+# --- Node.js & Dependencies ---
+node_modules/
+jspm_packages/
+web_stage/
+.npm
+.eslintcache
+.stylelintcache
+.prettiercache
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# --- TypeScript & Build Outputs ---
+dist/
+build/
+out/
+tsconfig.tsbuildinfo
+
+# --- Environment Variables & Secrets ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.pem
+*.key
+*.cert
+*.pfx
+
+# --- Prisma ORM ---
+/prisma/migrations/
+# Uncomment the line below if you want to ignore the auto-generated Prisma Client
+# node_modules/.prisma
+
+# --- Operating System Files ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.Trashes
+VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# --- IDEs and Editors ---
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.history/
+*.code-workspace
+
+# WebStorm / IntelliJ
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Testing & Coverage ---
+coverage/
+.nyc_output
+*.lcov
+.jest/
+
+# --- Logs and Diagnostics ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Runtime & Process Managers ---
+.pids
+*.pid
+*.seed
+*.pid.lock
+.pm2/
