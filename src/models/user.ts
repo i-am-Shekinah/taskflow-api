@@ -1,4 +1,4 @@
-import { Schema, model, Types } from 'mongoose';
+import { Schema, model, type Types } from 'mongoose';
 import bcrypt from 'bcryptjs';
 
 export interface IUser {

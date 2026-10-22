@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 import { User, checkPassword, hashPassword } from '../../models/user';
 import { HttpError } from '../../errors';
 import { signToken } from './jwt';

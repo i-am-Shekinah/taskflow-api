@@ -23,7 +23,7 @@ describe('task CRUD', () => {
 
   it('rejects a tampered token with 401', async () => {
     const token = await registerAndGetToken('tamper@example.com');
-    const res = await request(app).get('/api/tasks').set(auth(token + 'x'));
+    const res = await request(app).get('/api/tasks').set(auth(`${token}x`));
     expect(res.status).toBe(401);
   });
 

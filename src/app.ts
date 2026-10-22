@@ -1,4 +1,4 @@
-import express, { NextFunction, Request, Response } from 'express';
+import express, { type NextFunction, type Request, type Response } from 'express';
 import authRouter from './modules/auth/routes';
 import tasksRouter from './modules/tasks/routes';
 import { requireAuth } from './middleware/auth';

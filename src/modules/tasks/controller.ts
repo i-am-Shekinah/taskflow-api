@@ -1,6 +1,6 @@
 import { Types } from 'mongoose';
-import { Request, Response } from 'express';
-import { ITask, Task } from '../../models/task';
+import type { Request, Response } from 'express';
+import { type ITask, Task } from '../../models/task';
 import { HttpError } from '../../errors';
 import {
   createTaskSchema,
